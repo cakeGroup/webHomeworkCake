@@ -1,0 +1,172 @@
+* {
+	padding: 0;
+	margin: 0 auto;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #231F20;
+}
+
+body {
+	background-color: #AFFFFF;
+}
+
+/* 登陆注册栏 */
+#registerandlogin {
+	width: 1200px;
+	font-size: 20px;
+	height: 30px;
+	position: relative;
+}
+
+#wrap {
+	position: absolute;
+	right: 0px;
+	font-size: 23px;
+}
+
+/* logo一栏 */
+#navigationbar {
+	width: 1600px;
+	height: 180px;
+}
+
+#navigationbar>li {
+	float: left;
+	width: 210px;
+	height: 130px;
+	margin-left: 10px;
+
+}
+
+#logoimg {
+	width: 240px;
+	height: 180px;
+}
+
+.allproducts {
+	font-size: 22px;
+	color: #1E90FF;
+	text-align: center;
+	/* background: #CCCDDD; */
+}
+
+.allproducts:hover {
+	background: #CCCDDD;
+}
+
+#call {
+	padding-left: 30px;
+}
+
+.box {
+	width: 1200px;
+	height: 500px;
+	margin: 10px auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.slider {
+	width: 8400px;
+	position: absolute;
+	left: -1200px;
+}
+
+.slide {
+	width: 1200px;
+	overflow: hidden;
+	float: left;
+}
+
+.tu {
+	width: 1200px;
+	height: 500px;
+}
+
+.box>span {
+	display: block;
+	width: 30px;
+	height: 50px;
+	text-align: center;
+	cursor: pointer;
+	color: ;
+	top: 210px;
+	line-height: 50;
+	background: rgb(255, 0, 0);
+	font-size: 30px;
+	position: absolute;
+	opacity: 0;
+}
+
+#left {
+	left: 30px;
+}
+
+#right {
+	right: 30px;
+}
+
+#cakediv {
+	width: 1300px;
+	height: 1300px;
+}
+
+.cakeli {
+	float: left;
+	width: 400px;
+	height: 400px;
+	position: relative;
+	margin: 10px 10px;
+}
+
+.cakeli span {
+	display: none;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.cakeli:hover {
+	cursor: pointer;
+}
+
+.cakeli:hover span {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #FFF;
+	width: 400px;
+	z-index: 10;
+	height: 100px;
+	line-height: 36px;
+	background: #000000;
+	opacity: 0.5;
+}
+
+#buttomtxt {
+	width: 1500px;
+	border-top-style: groove;
+}
+
+#bu1 {
+	height: 40px;
+	font-size: 25px;
+	/* background-color: #CCCCCC; */
+}
+
+#commonsense li {
+	margin-left: 20px;
+	margin-top: 5px;
+
+}
+
+#commonsense li a {
+	color: #1688EA;
+}
