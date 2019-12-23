@@ -10,7 +10,7 @@ li {
 
 a {
 	text-decoration: none;
-	color: #231F20;
+
 }
 
 body {
@@ -19,9 +19,11 @@ body {
 
 /* 登陆注册栏 */
 #registerandlogin {
-	width: 1200px;
+	margin-top: 20px;
+	width: 1300px;
 	font-size: 20px;
 	height: 30px;
+	/* color: #1E90FF; */
 	position: relative;
 }
 
@@ -33,21 +35,23 @@ body {
 
 /* logo一栏 */
 #navigationbar {
-	width: 1600px;
+	width: 1400px;
+	height: 180px;
+	/* border: 1px solid red; */
+}
+
+
+#logoimg {
+	width: 220px;
 	height: 180px;
 }
 
 #navigationbar>li {
 	float: left;
 	width: 210px;
-	height: 130px;
-	margin-left: 10px;
-
-}
-
-#logoimg {
-	width: 240px;
-	height: 180px;
+	height: 160px;
+	margin-left: 32px;
+	/* border: 1px solid red; */
 }
 
 .allproducts {
@@ -58,7 +62,7 @@ body {
 }
 
 .allproducts:hover {
-	background: #CCCDDD;
+	background: #ADFFD0;
 }
 
 #call {
@@ -96,21 +100,20 @@ body {
 	height: 50px;
 	text-align: center;
 	cursor: pointer;
-	color: ;
 	top: 210px;
 	line-height: 50;
-	background: rgb(255, 0, 0);
+	background: #AFFFFF;
 	font-size: 30px;
 	position: absolute;
 	opacity: 0;
 }
 
 #left {
-	left: 30px;
+	left: 20px;
 }
 
 #right {
-	right: 30px;
+	right: 20px;
 }
 
 #cakediv {
@@ -132,6 +135,12 @@ body {
 	font-size: 20px;
 }
 
+.detail {
+	display: none;
+	text-decoration: none;
+	font-size: 20px;
+}
+
 .cakeli:hover {
 	cursor: pointer;
 }
@@ -141,13 +150,18 @@ body {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	color: #FFF;
+	color: #FFFFFF;
 	width: 400px;
 	z-index: 10;
-	height: 100px;
+	height: 150px;
 	line-height: 36px;
 	background: #000000;
-	opacity: 0.5;
+	opacity: 0.7;
+}
+
+.cakeli:hover span a {
+	color: #FFFFFF;
+	font-size: 25px;
 }
 
 #buttomtxt {
