@@ -282,7 +282,7 @@
 				number[this.idx].value -= 1;
 				var num = parseInt(number[this.idx].value);
 				var money = parseInt(price[this.idx].innerHTML);
-				smallMoney[this.idx].innerHTML =num*money + "元";
+				smallMoney[this.idx].innerHTML =num*money + "(元)";
 				jifen[this.idx].innerHTML = num*money;
 				var sumNumber = 0;
 				for(var j=0; j<check.length; j++){
@@ -295,7 +295,7 @@
 			var num = parseInt(number[this.idx].value) + 1;
 			number[this.idx].value = num;
 			var money = parseInt(price[this.idx].innerHTML);
-			smallMoney[this.idx].innerHTML = num*money + "元";
+			smallMoney[this.idx].innerHTML = num*money + "(元)";
 			jifen[this.idx].innerHTML = num*money;
 			var sumNumber = 0;
 			for(var j=0; j<check.length; j++){
