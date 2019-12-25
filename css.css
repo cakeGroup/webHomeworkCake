@@ -1,0 +1,42 @@
+/*
+* @Author: iridescent-y
+* @Date:   2019-12-25 16:50:12
+* @Last Modified by:   iridescent-y
+* @Last Modified time: 2019-12-25 18:37:21
+*/
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style: none; 
+}
+.zhongjian{
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+}
+.zuo{
+
+	float: left;
+}
+.you{
+	margin-left: 100px;
+}
+.shuliang{
+	float: left;
+	width: 20px;
+}
+.tupian{
+	position: relative;
+	margin: 0 auto;
+	width: 996px;
+}
+.tupian img{
+	width: 996px;
+}
+.dibu{
+	position: relative;
+	margin: 0 auto;
+	width: 996px;
+}
