@@ -6,7 +6,7 @@ var index = 1;
 var timer;
 var flag = 0;
 var timer = setInterval(next, 3000);
-
+// 向后
 function next() {
 	if (flag == 1) {
 		return;
@@ -24,7 +24,7 @@ function next() {
 	});
 }
 
-
+// 向前
 function prev() {
 	if (flag == 1) {
 		return;
@@ -41,7 +41,7 @@ function prev() {
 		flag = 0;
 	});
 }
-
+// 轮播图划上去显示左右按钮,停止3s播放
 box.onmouseover = function() {
 	animate(left, {
 		opacity: 50
@@ -51,6 +51,7 @@ box.onmouseover = function() {
 	});
 	clearInterval(timer);
 }
+// 没有划上去的时候不显示按钮,3s正常
 box.onmouseout = function() {
 	animate(left, {
 		opacity: 0

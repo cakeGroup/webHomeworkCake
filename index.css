@@ -13,26 +13,21 @@ a {
 	color: black;
 }
 
-body {
-	/* background-color: #FFFFFF; */
-	margin: 0 auto;
-}
-
-img{
+img {
 	transition: all 0.7s ease 0s;
 }
-img:hover{
-	transform: scale(1.2,1.2);
+
+img:hover {
+	transform: scale(1.2, 1.2);
 }
 
 
-/* 登陆注册栏 */
+/* 登陆注册一栏 */
 #registerandlogin {
 	margin-top: 20px;
 	width: 1300px;
 	font-size: 20px;
 	height: 30px;
-	/* color: #1E90FF; */
 	position: relative;
 }
 
@@ -46,9 +41,7 @@ img:hover{
 #navigationbar {
 	width: 1400px;
 	height: 180px;
-	/* border: 1px solid red; */
 }
-
 
 #logoimg {
 	width: 220px;
@@ -65,19 +58,20 @@ img:hover{
 
 .allproducts {
 	font-size: 22px;
-	color: #1E90FF;
+	/* color: #1E90FF; */
 	text-align: center;
 	/* background: #CCCDDD; */
 }
 
 .allproducts:hover {
-	background: #87d0e0;
+	background: #87d0e3;
 }
 
 #call {
 	padding-left: 30px;
 }
 
+/* 轮播图 */
 .box {
 	width: 1200px;
 	height: 500px;
@@ -103,6 +97,7 @@ img:hover{
 	height: 500px;
 }
 
+/* 轮播图左右的按钮 */
 .box>span {
 	display: block;
 	width: 30px;
@@ -111,10 +106,10 @@ img:hover{
 	cursor: pointer;
 	top: 210px;
 	line-height: 50;
-	background: #AFFFFF;
+	background: #000000;
 	font-size: 30px;
 	position: absolute;
-	opacity: 0;
+	/* opacity: 0; */
 }
 
 #left {
@@ -125,19 +120,15 @@ img:hover{
 	right: 20px;
 }
 
-#fenge{
-	margin: 0 auto;
-	height: 30px;
-	width: 1400px;
-}
+
+/* 9个蛋糕 */
 #cakediv {
+	border-top-style: groove;
 	width: 1300px;
 	height: 1300px;
 }
-#cakeul li{
-	width: 400px;
-	height: 400px;
-}
+
+/* 每个蛋糕 */
 .cakeli {
 	float: left;
 	width: 400px;
@@ -148,6 +139,7 @@ img:hover{
 	overflow: hidden;
 }
 
+/* 每个蛋糕中划上去显示的东西 */
 .cakeli span {
 	display: none;
 	text-decoration: none;
@@ -160,11 +152,13 @@ img:hover{
 	font-size: 20px;
 }
 
+/* 每个蛋糕划上去 */
 .cakeli:hover {
 	cursor: pointer;
-	transform: scale(1.07,1.07);
+	transform: scale(1.07, 1.07);
 }
 
+/* 划上去之后的效果 */
 .cakeli:hover span {
 	display: block;
 	position: absolute;
@@ -173,10 +167,10 @@ img:hover{
 	color: #FFFFFF;
 	width: 400px;
 	z-index: 10;
-	height: 150px;
+	height: 120px;
 	line-height: 36px;
-	background: #000000;
-	opacity: 0.7;
+	background: #87d0e3;
+	/* opacity: 0.9; */
 }
 
 .cakeli:hover span a {
@@ -184,27 +178,25 @@ img:hover{
 	font-size: 25px;
 }
 
+/* 最底下文字 */
 #buttomtxt {
 	width: 1500px;
 	border-top-style: groove;
 }
 
-#bu1 {
-	height: 40px;
-	font-size: 25px;
-	/* background-color: #CCCCCC; */
-}
-
+/* 每个链接 */
 #commonsense li {
 	margin-left: 20px;
 	margin-top: 5px;
-
 }
 
+/* 底部文字链接中的文字颜色 */
 #commonsense li a {
 	color: #1688EA;
 }
-.right-wrap-all{
+
+/* 右侧所有fixed */
+.right-wrap-all {
 	right: 0px;
 	position: fixed;
 	/* width: 200px; */
@@ -212,11 +204,15 @@ img:hover{
 	padding-top: 0px;
 	/* border: 1px solid red; */
 }
+
+/* 右侧第一个的高度 */
 #right1 {
 	top: 650px;
-	
+
 }
-#GoTop{
+
+/* 控制回到顶部的图片 */
+#GoTop {
 	width: 150px;
 	height: 80px;
 }
