@@ -1,0 +1,209 @@
+/*
+* @Author: 1716576990
+* @Date:   2019-12-25 13:28:41
+* @Last Modified by:   1716576990
+* @Last Modified time: 2019-12-25 18:31:11
+*/
+* {
+	padding: 0;
+	margin: 0 auto;
+}
+
+ul,li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+
+body{
+	/* background-color: #FFFFFF; */
+	margin: 0 auto;
+}
+
+img{
+	transition: all 0.7s ease 0s;
+}
+img:hover{
+	transform: scale(1.2,1.2);
+}
+
+/* 登陆注册一栏 */
+#registerandlogin {
+	margin-top: 20px;
+	width: 1300px;
+	font-size: 20px;
+	height: 30px;
+	position: relative;
+}
+#wrap {
+	position: absolute;
+	right: 0px;
+	font-size: 23px;
+}
+/* logo一栏 */
+
+#navigationbar {
+	width: 1400px;
+	height: 180px;
+	/* border: 1px solid red; */
+}
+
+
+#logoimg {
+	width: 220px;
+	height: 180px;
+}
+
+#navigationbar>li {
+	float: left;
+	width: 210px;
+	height: 138px;
+	margin-left: 32px;
+	/* border: 1px solid red; */
+}
+
+.allproducts {
+	font-size: 22px;
+	color: #87d0e3;
+	text-align: center;
+	/* background: #CCCDDD; */
+}
+
+.allproducts:hover {
+	background: #87d0e0;
+}
+
+#call {
+	padding-left: 30px;
+}
+.title1{
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.box2{
+	width: 1340px;
+	position: relative;
+}
+.title2{
+	height: 30px;
+	width: 1340px;
+	line-height: 30px;
+	background-color: #87d0e3;
+}
+.box2 td{
+	float: left;
+	width: 190px;
+
+}
+.number{
+	width: 20px;
+}
+.list{
+	height: 500px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+}
+.shan{
+	margin-top: 15px;
+	display: inline-block;
+}
+.box3{
+	width: 1340px;
+	margin-top: 10px;
+}
+.box4{
+	position: fixed;
+	width: 500px;
+	height: 300px;
+	background-color: #87d0e3;
+	border: 1px solid #999999;
+	top: 30%;
+	left: 35%;
+	text-align: center;
+	display: none;
+}
+.box4 input{
+	margin-top: 20px;
+
+}
+.require{
+	width: 150px;
+	height: 110px;
+	margin-top: 20px;
+}
+.address{
+	margin-left: 640px;
+	background-color: #87d0e3;
+	border: 1px solid black;
+}
+.dele{
+	width: 35px;
+	height: 25px;
+	background-color: #87d0e3;
+	border: 1px solid black;
+}
+#SUM{
+	position: absolute;
+	left: 1250px;
+	bottom: 10px;
+}
+
+img{
+	width: 20px;
+	height: 20px;
+}
+#buy{
+	margin-left: 650px;
+	margin-bottom: 10px;
+	width: 60px;
+	height: 30px;
+	background-color: #87d0e3;
+	border: 1px solid black;
+}
+#tijiao{
+	margin-top: 10px;
+}
+/* 最底下文字 */
+#buttomtxt {
+	width: 1500px;
+	border-top-style: groove;
+}
+
+/* 每个链接 */
+#commonsense li {
+	margin-left: 20px;
+	margin-top: 5px;
+}
+
+/* 底部文字链接中的文字颜色 */
+#commonsense li a {
+	color: #1688EA;
+}
+
+/* 右侧所有fixed */
+.right-wrap-all {
+	right: 0px;
+	position: fixed;
+	/* width: 200px; */
+	font-size: 20px;
+	padding-top: 0px;
+	/* border: 1px solid red; */
+}
+
+/* 右侧第一个的高度 */
+#right1 {
+	top: 650px;
+
+}
+
+/* 控制回到顶部的图片 */
+#GoTop {
+	width: 150px;
+	height: 80px;
+}
