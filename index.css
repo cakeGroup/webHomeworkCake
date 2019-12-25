@@ -14,8 +14,17 @@ a {
 }
 
 body {
-	background-color: #AFFFFF;
+	/* background-color: #FFFFFF; */
+	margin: 0 auto;
 }
+
+img{
+	transition: all 0.7s ease 0s;
+}
+img:hover{
+	transform: scale(1.2,1.2);
+}
+
 
 /* 登陆注册栏 */
 #registerandlogin {
@@ -62,7 +71,7 @@ body {
 }
 
 .allproducts:hover {
-	background: #ADFFD0;
+	background: #87d0e0;
 }
 
 #call {
@@ -116,17 +125,27 @@ body {
 	right: 20px;
 }
 
+#fenge{
+	margin: 0 auto;
+	height: 30px;
+	width: 1400px;
+}
 #cakediv {
 	width: 1300px;
 	height: 1300px;
 }
-
+#cakeul li{
+	width: 400px;
+	height: 400px;
+}
 .cakeli {
 	float: left;
 	width: 400px;
 	height: 400px;
 	position: relative;
 	margin: 10px 10px;
+	transition: all 0.7s ease 0s;
+	overflow: hidden;
 }
 
 .cakeli span {
@@ -143,6 +162,7 @@ body {
 
 .cakeli:hover {
 	cursor: pointer;
+	transform: scale(1.07,1.07);
 }
 
 .cakeli:hover span {
@@ -185,13 +205,18 @@ body {
 	color: #1688EA;
 }
 .right-wrap-all{
-	right: -30px;
+	right: 0px;
 	position: fixed;
-	width: 200px;
+	/* width: 200px; */
 	font-size: 20px;
-	padding-top: 10px;
+	padding-top: 0px;
 	/* border: 1px solid red; */
 }
 #right1 {
-	top: 500px;
+	top: 650px;
+	
+}
+#GoTop{
+	width: 150px;
+	height: 80px;
 }
