@@ -41,3 +41,11 @@ ul,li{
 	margin: 0 auto;
 	width: 996px;
 }
+.number{
+	width: 30px;
+}
+.name{
+	position: absolute;
+	top: 320px;
+	left: 560px;
+}
