@@ -6,11 +6,67 @@
 	<link rel="stylesheet" type="text/css" href="css.css">
 </head>
 <body>
+		<div id="Top">
+			<!-- 回到顶部的时候回到此处 -->
+		</div>
+		<!-- 注册登陆一栏 -->
+		<div id="registerandlogin">
+			<div id="wrap">
+				<!-- 蔡孟婷 添加登陆页面 -->
+				<a href="login.html">登录&nbsp;&nbsp;</a>
+				<!-- 蔡孟婷 添加注册页面 -->
+				<a href="register.html">注册</a>
+			</div>
+		</div>
+	<!-- logo一栏 -->
+	<ul id="navigationbar">
+		<li id="logo">
+			<img src="images/logo.png" id="logoimg">
+		</li>
+		<li class="allproducts">
+			<!-- 申冰洁 -->
+			<!-- 此处链接添加全部商品页面 -->
+			<a href="cake.html">
+				<br>All allproducts<br>
+					全部商品
+			</a>
+			</li>
+			<li class="allproducts">
+				<!-- 韦俊豪 -->
+				<!-- 此处链接添加购物车页面 -->
+				<a href="cakeOne.html">
+					<br>My Shopping Cart<br>我的购物车
+				</a>
+			</li>
+			<li class="allproducts">
+				<!-- 无所谓 -->
+				<!-- 此处是否添加公司简介？ -->
+				<a href="">
+					<br>company profile<br>
+					公司简介
+				</a>
+			</li>
+			<li id="aboutus " class="allproducts">
+				<!-- 无所谓 -->
+				<!-- 此处是否添加 关于我们？ -->
+				<a href="">
+					<br>About Us<br>
+					关于我们
+				</a>
+			</li>
+			<div id="call">
+				<br><br>
+				欢迎咨询在线客服<br>
+				0312-2788125❤
+			</div>
+		</ul>
+
 	<div class="zhongjian">
 		<div class="zuo">
 			<img src="1144_P_1562474190887.jpg" style="margin-bottom: 10px;height: 487px">
 		</div>
 		<div class="you">
+			
 			<div class="youtu">
 				<img src="1562474189519495842.jpg" style="margin-bottom:10px; height:290px;">
 			</div>
@@ -32,15 +88,28 @@
 					<a href="" style="color:#fff; padding-left:0px; text-align:center;">规格</a>
 					</div>
 					<div class="gouwuche" style="background:#87d0e3;">
-					<a href="" style="color:#fff; padding-left:0px; text-align:center;">加入购物车</a>
+					<a href="cakeOne.html" style="color:#fff; padding-left:0px; text-align:center;">加入购物车</a>
 					</div>
 					<div class="购买" style="background:yellow;">
-					<a href="" style="color:black; padding-left:0px; text-align:center;">立即购买</a>
+					<a href="cakeOne.html" style="color:black; padding-left:0px; text-align:center;">立即购买</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<div id="box">
+      <div id="img1">
+        <img src="QQ截图20191227131224.png" width="300" height="300" id="Simg" />
+        <div id="slider"></div>
+      </div>
+
+      <div id="img2" >
+        <img src="QQ截图20191227132007.png" id="Bimg" />
+      </div>
+
+    </div>
+
 	<div class="tupian" style="margin-top: 12px;">
 			<img src="13.jpg">
 			<img src="11.jpg">
@@ -90,4 +159,74 @@
 		number[0].value = num;
 	}
 </script>
+
+ <script type="text/javascript">
+      var box = document.getElementById("box");
+      var img1 = document.getElementById("img1");
+      var slider = document.getElementById("slider");
+      var img2 = document.getElementById("img2");
+      var Bimg = document.getElementById("Bimg");
+      img1.onmouseover = function() {
+        slider.style.display = "block";
+        img2.style.display = "block";
+      }
+      img1.onmouseout = function() {
+        slider.style.display = "none";
+        img2.style.display = "none";
+      }
+      img1.onmousemove = function(e) {
+        var mouseX = e.clientX;
+        //console.log(mouseX);
+        var mouseY = e.clientY;
+        var boxLeft = box.offsetLeft;//元素到页面左侧的距离
+        var boxTop = box.offsetTop;
+        var img1Width = img1.offsetWidth;
+        var img1Height = img1.offsetHeight;
+        var sliderWidth = slider.offsetWidth;//获取宽度
+        var sliderHeight = slider.offsetWidth;//获取
+        //console.log(sliderWidth);//151
+        var sliderLeft = mouseX-boxLeft-sliderWidth/2;
+        var sliderTop = mouseY-boxTop-sliderHeight/2;
+        if(sliderLeft <= 0) {
+          sliderLeft = 0;
+        }
+        //console.log(sliderLeft + ","+(img1Width-sliderWidth));
+        if(sliderLeft >= (img1Width-sliderWidth)) {
+          sliderLeft = (img1Width-sliderWidth);
+        }
+       
+        if(sliderTop <= 0) {
+          sliderTop = 0;
+        }
+        if(sliderTop >= (img1Height-sliderHeight)) {
+          sliderTop = img1Height-sliderHeight;
+        }
+        slider.style.left = (sliderLeft) + "px";
+        slider.style.top = (sliderTop) + "px";
+
+
+         var count=Bimg.offsetHeight/Simg.offsetHeight;
+         Bimg.style.left=-sliderLeft*count+"px";
+          Bimg.style.top=-sliderTop*count+"px";
+    }
+      img1.onmouseout=function(){
+        slider.style.display="none";
+        img2.style.display="none";
+      }
+
+
+     
+    </script>
+    <script type="text/javascript">
+      var objName="obj2";
+      var obj={
+        objName:"obj1",
+        sayHello:function(){
+          console.log(this.objName);
+        }
+      }
+      console.log(this.objName);
+      obj.sayHello();
+    </script>
+
 </html>
